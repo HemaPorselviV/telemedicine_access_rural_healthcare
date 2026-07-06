@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prescription</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+body{
+    background:#eef7ff;
+}
+
+.prescription{
+    width:80%;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+h1,h2{
+    color:#0077b6;
+    text-align:center;
+}
+
+.info{
+    margin-top:20px;
+    line-height:2;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table,th,td{
+    border:1px solid #ccc;
+}
+
+th{
+    background:#0077b6;
+    color:white;
+}
+
+th,td{
+    padding:12px;
+    text-align:center;
+}
+
+.buttons{
+    text-align:center;
+    margin-top:30px;
+}
+
+button{
+    padding:12px 25px;
+    margin:10px;
+    border:none;
+    border-radius:6px;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.download{
+    background:#28a745;
+}
+
+.print{
+    background:#0077b6;
+}
+
+button:hover{
+    opacity:.9;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<h2>❤️ TeleMedicine</h2>
+</div>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="appointment.html">Appointment</a></li>
+<li><a href="videocall.html">Video Call</a></li>
+<li><a href="prescription.html">Prescription</a></li>
+<li><a href="records.html">Medical Records</a></li>
+<li><a href="emergency.html">Emergency</a></li>
+</ul>
+</nav>
+
+</header>
+
+<div class="prescription">
+
+<h1>TeleMedicine Hospital</h1>
+<h2>Digital Prescription</h2>
+
+<div class="info">
+<p><strong>Patient Name:</strong> Ravi Kumar</p>
+<p><strong>Age:</strong> 30</p>
+<p><strong>Doctor:</strong> Dr. Kumar</p>
+<p><strong>Date:</strong> 05-07-2026</p>
+<p><strong>Diagnosis:</strong> Viral Fever</p>
+</div>
+
+<table>
+
+<tr>
+<th>Medicine</th>
+<th>Dosage</th>
+<th>Duration</th>
+</tr>
+
+<tr>
+<td>Paracetamol 500mg</td>
+<td>1 Tablet - 3 Times/Day</td>
+<td>5 Days</td>
+</tr>
+
+<tr>
+<td>Vitamin C</td>
+<td>1 Tablet - Daily</td>
+<td>7 Days</td>
+</tr>
+
+<tr>
+<td>Cough Syrup</td>
+<td>10 ml - Twice/Day</td>
+<td>5 Days</td>
+</tr>
+
+</table>
+
+<div class="buttons">
+
+<button class="download" onclick="downloadPrescription()">
+Download Prescription
+</button>
+
+<button class="print" onclick="window.print()">
+Print Prescription
+</button>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>© 2026 TeleMedicine Access for Rural Healthcare</p>
+
+</footer>
+
+<script>
+
+function downloadPrescription(){
+
+alert("Prescription Downloaded Successfully!");
+
+}
+
+</script>
+
+</body>
+</html>
