@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Consultation</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+body{
+    background:#eef7ff;
+}
+
+.video-container{
+    max-width:900px;
+    margin:40px auto;
+    padding:20px;
+    text-align:center;
+}
+
+.video-box{
+    background:#222;
+    color:white;
+    height:400px;
+    border-radius:12px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.doctor-info{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    margin-bottom:20px;
+}
+
+.controls button{
+    margin:10px;
+    padding:12px 20px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.join{
+    background:#28a745;
+    color:white;
+}
+
+.mic{
+    background:#007bff;
+    color:white;
+}
+
+.camera{
+    background:#17a2b8;
+    color:white;
+}
+
+.end{
+    background:#dc3545;
+    color:white;
+}
+
+.controls button:hover{
+    opacity:0.9;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<h2>❤️ TeleMedicine</h2>
+</div>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="appointment.html">Appointment</a></li>
+<li><a href="videocall.html">Video Call</a></li>
+<li><a href="prescription.html">Prescription</a></li>
+<li><a href="records.html">Medical Records</a></li>
+<li><a href="emergency.html">Emergency</a></li>
+</ul>
+</nav>
+
+</header>
+
+<div class="video-container">
+
+<div class="doctor-info">
+<h2>Video Consultation</h2>
+<p><strong>Doctor:</strong> Dr. Kumar</p>
+<p><strong>Department:</strong> General Medicine</p>
+<p><strong>Time:</strong> 10:30 AM</p>
+</div>
+
+<div class="video-box">
+📹 Video Screen
+</div>
+
+<div class="controls">
+
+<button class="join" onclick="joinCall()">
+Join Video Call
+</button>
+
+<button class="mic" onclick="mic()">
+🎤 Microphone
+</button>
+
+<button class="camera" onclick="camera()">
+📷 Camera
+</button>
+
+<button class="end" onclick="endCall()">
+End Call
+</button>
+
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 TeleMedicine Access for Rural Healthcare</p>
+</footer>
+
+<script>
+
+function joinCall(){
+alert("Connecting to Doctor...");
+}
+
+function mic(){
+alert("Microphone Turned ON/OFF");
+}
+
+function camera(){
+alert("Camera Turned ON/OFF");
+}
+
+function endCall(){
+alert("Video Consultation Ended.");
+}
+
+</script>
+
+</body>
+</html>
