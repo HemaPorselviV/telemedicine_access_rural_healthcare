@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medical Records</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+body{
+    background:#eef7ff;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+h2{
+    text-align:center;
+    color:#0077b6;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+button{
+    padding:12px 20px;
+    background:#0077b6;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#023e8a;
+}
+
+table{
+    width:100%;
+    margin-top:20px;
+    border-collapse:collapse;
+}
+
+table,th,td{
+    border:1px solid #ccc;
+}
+
+th{
+    background:#0077b6;
+    color:white;
+}
+
+th,td{
+    padding:12px;
+    text-align:center;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<h2>❤️ TeleMedicine</h2>
+</div>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="appointment.html">Appointment</a></li>
+<li><a href="videocall.html">Video Call</a></li>
+<li><a href="prescription.html">Prescription</a></li>
+<li><a href="records.html">Medical Records</a></li>
+<li><a href="emergency.html">Emergency</a></li>
+</ul>
+</nav>
+
+</header>
+
+<div class="container">
+
+<h2>Patient Medical Records</h2>
+
+<input type="text" id="name" placeholder="Patient Name">
+
+<input type="text" id="disease" placeholder="Disease">
+
+<input type="date" id="date">
+
+<button onclick="addRecord()">Save Record</button>
+
+<table id="recordTable">
+
+<tr>
+<th>Patient Name</th>
+<th>Disease</th>
+<th>Date</th>
+</tr>
+
+</table>
+
+</div>
+
+<footer>
+
+<p>© 2026 TeleMedicine Access for Rural Healthcare</p>
+
+</footer>
+
+<script>
+
+function addRecord(){
+
+var name=document.getElementById("name").value;
+var disease=document.getElementById("disease").value;
+var date=document.getElementById("date").value;
+
+if(name=="" || disease=="" || date==""){
+alert("Please fill all fields.");
+return;
+}
+
+var table=document.getElementById("recordTable");
+
+var row=table.insertRow();
+
+row.insertCell(0).innerHTML=name;
+row.insertCell(1).innerHTML=disease;
+row.insertCell(2).innerHTML=date;
+
+alert("Medical Record Saved Successfully!");
+
+document.getElementById("name").value="";
+document.getElementById("disease").value="";
+document.getElementById("date").value="";
+
+}
+
+</script>
+
+</body>
+</html>
